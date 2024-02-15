@@ -8,7 +8,7 @@ export const DashboardCard = ({ imageSrc, title, visitorsCount }) => {
     <Badge count={visitorsCount}>
       <Card
         hoverable
-        style={{ width: 180 }}
+        style={{ width: 240 }}
         cover={<img alt={title} src={imageSrc} />}
         className="shadow-sm"
       >

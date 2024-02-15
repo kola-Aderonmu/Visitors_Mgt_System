@@ -43,6 +43,7 @@ export const SiderComponent = () => {
       style: { color: "white", border: "1px solid white" },
       icon: <IoStatsChartOutline />,
     },
+    
   ];
   return (
     <Sider

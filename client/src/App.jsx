@@ -7,7 +7,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        {/* <Route path="/details/naf" element={<Nafdashbord />} /> */}
       </Routes>
     </>
   );
