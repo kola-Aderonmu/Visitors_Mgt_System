@@ -16,13 +16,16 @@ app.use(morgan('tiny'))
 
 
 // ROUTES
-app.get("/", (req, res) => {
-  res.json({ message: "Hello from the server!" });
-});
+app.use("/api", require("./routes/auth"));
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, async () => {
-  await connectDB();
-  console.log(`Server is running on http://localhost:${PORT}`);
+  try {
+    await connectDB();
+    console.log(`Server is running on http://localhost:${PORT}`);
+  } catch (error) {
+    console.log(error);
+  }
+  
 });
 
